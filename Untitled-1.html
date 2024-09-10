@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, p {
+            color: white;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: auto;
+        }
+
+        /* Botón */
+        button {
+            padding: 10px 20px;
+            font-size: 16px; /* Arreglado de 'front-size' a 'font-size' */
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Alternativa de fuente */
+        body.alternativa {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenidos a MATUTINO!</h1>
+    <p>Encontrá tu compañero de vida.</p>
+
+    <!-- Imagen local -->
+    <img src="mate1.jpeg" alt="Imagen de mate">
+
+    <!-- Botón para cambiar el estilo de la página -->
+    <button onclick="cambiarEstilo()">Elegí tu compañero</button>
+
+    <script>
+        function cambiarEstilo() {
+            // Cambiar el estilo de la página
+            document.body.classList.toggle('alternativa');
+        }
+    </script>
+</body>
+</html>
+
